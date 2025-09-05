@@ -21,9 +21,12 @@ jobs:
 
       - name: Instalar dependências
         run: npm install
+        working-directory: ./frontend   # ⬅️ ajuste aqui
 
       - name: Rodar ESLint
         run: npx eslint .
+        working-directory: ./frontend   # ⬅️ ajuste aqui
 
       - name: Rodar Jest
         run: npm test
+        working-directory: ./frontend   # ⬅️ ajuste aqui
