@@ -24,8 +24,6 @@ jobs:
 
       - name: Rodar ESLint
         run: npx eslint .
-        working-directory: ./frontend   # ⬅️ ajuste aqui
 
       - name: Rodar Jest
         run: npm test
-        working-directory: ./frontend   # ⬅️ ajuste aqui
